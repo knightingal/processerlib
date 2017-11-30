@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MultDownloadProcess.iml" filepath="$PROJECT_DIR$/MultDownloadProcess.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/processerlib/processerlib.iml" filepath="$PROJECT_DIR$/processerlib/processerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processerlib.iml" filepath="$PROJECT_DIR$/processerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processerlib/processerlib-processerlib.iml" filepath="$PROJECT_DIR$/processerlib/processerlib-processerlib.iml" />
     </modules>
   </component>
 </project>

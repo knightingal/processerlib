@@ -79,8 +79,15 @@ public class SubAdapter extends RecyclerView.Adapter<SubAdapter.ViewHolder>{
 //        });
         if (counterBean.getMax() > 0) {
             holder.processBar.setPercent(counterBean.getCurr() * 100 / counterBean.getMax());
+            if (counterBean.getCurr() > 0 && counterBean.getCurr() < counterBean.getMax()) {
+                holder.processBar.setVisibility(View.VISIBLE);
+            } else {
+                holder.processBar.setVisibility(View.INVISIBLE);
+            }
+
         } else {
             holder.processBar.setPercent(0);
+            holder.processBar.setVisibility(View.INVISIBLE);
         }
         holder.processBar.invalidate();
     }
@@ -109,6 +116,7 @@ public class SubAdapter extends RecyclerView.Adapter<SubAdapter.ViewHolder>{
 
         @Override
         public void onClick(View v) {
+            processBar.setVisibility(View.VISIBLE);
             Log.d(TAG, "click item " + index);
             subActivity.asyncStartDownload(index);
             Log.d(TAG, "click end");

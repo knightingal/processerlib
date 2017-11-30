@@ -161,7 +161,7 @@ public class DownloadService extends Service implements TaskNotifier {
         running = false;
     }
 
-    SparseArray<Counter> counterSparseArray = new SparseArray<>();
+    public SparseArray<Counter> counterSparseArray = new SparseArray<>();
     @Override
     public void onTaskComplete(AbsTask task, int index) {
 

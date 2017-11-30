@@ -60,6 +60,9 @@ public class SubActivity extends AppCompatActivity implements RefreshListener {
 
         viewHolder.procTv.setText(String.valueOf(counterBean.getCurr()) + "/" + String.valueOf(counterBean.getMax()));
         viewHolder.processBar.setPercent(counterBean.getCurr() * 100 / counterBean.getMax());
+        if (counterBean.getCurr() == 0 || counterBean.getCurr() == counterBean.getMax()) {
+            viewHolder.processBar.setVisibility(View.INVISIBLE);
+        }
         viewHolder.processBar.invalidate();
 
 
